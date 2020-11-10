@@ -1,0 +1,8 @@
+class pencil:
+    def __init__(self, color, material, length):
+        self.color = color
+        self.material = material
+        self.length = length
+
+pencil1 = pencil("green", "plastic", 14)
+pencil2 = pencil("purple", "wood", 6)
