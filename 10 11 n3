@@ -1,0 +1,13 @@
+class passengers:
+    tickets = []
+    bought_tickets = 0
+
+    def __init__(self, name):
+        self.name = name
+    def buy(self):
+        passengers.tickets.append(self.name)
+        passengers.bought_tickets = passengers.bought_tickets + 1
+petya = passengers("Петя")
+petya.buy()
+masha = passengers("Маша")
+masha.buy()
