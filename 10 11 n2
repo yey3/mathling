@@ -1,0 +1,21 @@
+class pencil:
+    def __init__(self, color, material, length):
+        self.color = color
+        self.material = material
+        self.length = length
+
+
+class pencil_sharpener:
+    def __init__(self):
+        pass
+
+    def process(self, this_pencil):
+        if isinstance(this_pencil, pencil):
+            return this_pencil.length - 2
+        else: return 0
+
+
+pencil1 = pencil("green", "plastic", 14)
+sharpener1 = pencil_sharpener
+pencil1.length = sharpener1.process(sharpener1, pencil1)
+print(pencil1.length)
